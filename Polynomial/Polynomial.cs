@@ -512,7 +512,8 @@ namespace PolynomialTask
         /// <returns>A shallow copy.</returns>
         public object Clone()
         {
-            return new Polynomial(this.coefficients);
+            return this.MemberwiseClone();
+            //return new Polynomial(this.coefficients);
         }
 
         // private
